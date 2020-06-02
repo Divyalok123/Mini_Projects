@@ -13,12 +13,12 @@ let maxim;
 let count = 1;
 var interval;
 function counter() {
-    // if(input.trim() == "") return;
     count = 1;
     current.innerHTML = 0;
     next.innerHTML = 1;
     maxim = input.value;
     if(maxim.trim() == "") return;
+    clearInterval(interval);
     if(numdigits(parseInt(maxim)) == 3) 
     {
         intervaldur = 400;
@@ -26,8 +26,8 @@ function counter() {
     }
     else if (numdigits(parseInt(maxim)) > 3)
     {
-        intervaldur = 200;
-        timeoutdur = 100;
+        alert("Too big number");
+        return;
     }
     interval = setInterval(animate, intervaldur);
 }
