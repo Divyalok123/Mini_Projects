@@ -78,7 +78,7 @@ button > span {
 #counterblock {
 	height: 40px;
 	width: 15%;
-	max-width: 40px;
+	max-width: 80px;
 	border: 1px solid black;
 	border-radius: 5%;
 	box-shadow: 0 0 2px 1px white;

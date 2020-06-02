@@ -2,6 +2,13 @@ var current = document.querySelector(".elementone");
 var next = document.querySelector(".elementtwo");
 var input = document.getElementById("inputfield");
 
+function numdigits(num)
+{
+    return Math.log(num)*Math.LOG10E + 1 | 0;
+}
+
+var intervaldur = 1000;
+var timeoutdur = 500;
 let maxim;
 let count = 1;
 var interval;
@@ -12,7 +19,17 @@ function counter() {
     next.innerHTML = 1;
     maxim = input.value;
     if(maxim.trim() == "") return;
-    interval = setInterval(animate, 1000);
+    if(numdigits(parseInt(maxim)) == 3) 
+    {
+        intervaldur = 400;
+        timeoutdur = 200;
+    }
+    else if (numdigits(parseInt(maxim)) > 3)
+    {
+        intervaldur = 200;
+        timeoutdur = 100;
+    }
+    interval = setInterval(animate, intervaldur);
 }
 
 function animate() {
@@ -27,7 +44,7 @@ function animate() {
         next.innerHTML++;
         count++;
         next.classList.remove('animate');
-    }, 500);
+    }, timeoutdur);
 }
 
 
