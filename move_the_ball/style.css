@@ -1,0 +1,17 @@
+#ball {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    background: radial-gradient(rgb(182, 63, 63), white, rgb(204, 72, 72), rgb(155, 116, 43));
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 600px)
+{
+    #ball {
+        width: 70px;
+        height: 70px;
+    }
+}
