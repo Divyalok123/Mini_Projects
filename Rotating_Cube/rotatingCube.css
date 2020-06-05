@@ -1,0 +1,77 @@
+.cube {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    margin: 300px;
+    transition: all 1.5s;
+    transform-style: preserve-3d;
+    perspective: 2000px;
+    animation-name: rotate, translate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate3d(1, 1, 1, 90deg) translateX(100px);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 45deg) translateY(100px);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, 360deg) translateX(500px);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 270deg) translateX(-200px) translateY(-100px);
+    }
+}
+
+.face {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transition: all 1s;   
+}
+
+
+
+.one {
+    background-color: rgb(235, 93, 93);
+}
+
+
+.two {
+    background-color: rgb(115, 115, 224);
+    transform: rotateY(90deg) translateZ(-50px) translateX(-50px);
+}
+
+
+
+.three {
+    background-color: grey;
+    transform: rotateY(90deg) translateZ(50px) translateX(-50px);
+}
+
+
+.four {
+    background-color: rgb(56, 33, 33);
+    transform: rotateZ(90deg) translateZ(100px);
+
+}
+
+.five {
+    background-color: rgb(22, 61, 22);
+    transform: rotateX(90deg) translateY(50px) translateZ(-50px);
+}
+
+
+.six {
+    background-color: rgb(104, 52, 93);
+    transform: rotateX(90deg) translateY(50px) translateZ(50px);
+}
