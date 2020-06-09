@@ -7,10 +7,14 @@ body {
     background:#fcf3d2; 
 }
 
+::selection {
+    background-color: red;
+}
+
 .bar {
     position: fixed;
-    width: 200px;
-    height: 30px;
+    width: 180px;
+    height: 28px;
     border: 1px solid black;
     border-radius: 20px;
     right: 12px;
@@ -21,6 +25,10 @@ body {
     color: rgb(82, 82, 243);
     padding-top: 9px;
     transition: all 0.5s;
+}
+
+.bar::selection, .bar span::selection {
+    background-color: lightblue;
 }
 
 .text {

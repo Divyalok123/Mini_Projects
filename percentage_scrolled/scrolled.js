@@ -1,4 +1,3 @@
-
 function getHeightt()
 {
     return Math.max(document.body.scrollHeight, document.body.offsetHeight, document.body.clientHeight);
@@ -13,12 +12,9 @@ window.onresize = function(e)
     winh = window.innerHeight;
 };
 
-console.log(scrollH);
-console.log(winh);
-console.log(window.scrollY);
-
 var thenumber = document.getElementById("number")
 window.addEventListener("scroll", function() {
-    var val = Math.floor((window.scrollY/(scrollH-winh))*100);
+    var yoff = window.pageYOffset;
+    var val = Math.floor((yoff/(scrollH-winh))*100);
     thenumber.innerHTML = val;
 });
