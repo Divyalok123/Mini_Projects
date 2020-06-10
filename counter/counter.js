@@ -40,10 +40,10 @@ function animate() {
 
     next.classList.add('animate');
     setTimeout(function() {
+        next.classList.remove('animate');
         current.innerHTML++;
         next.innerHTML++;
         count++;
-        next.classList.remove('animate');
     }, timeoutdur);
 }
 
