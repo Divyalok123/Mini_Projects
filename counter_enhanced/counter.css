@@ -1,0 +1,110 @@
+body {
+    background-color: rgb(211, 237, 238);
+}
+
+*:focus {
+    outline: 0;
+}
+
+::selection {
+    background-color: lightcyan;
+}
+
+.upper-box {
+    width: 90%;
+    margin: 30px auto;
+    padding: 40px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, rgb(137, 223, 245), rgb(238, 108, 108));
+}
+
+.upper-box h1 {
+    text-align: center;
+    color: white;
+    font-family: monospace;
+    letter-spacing: 4px;
+}
+
+.lower-box {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 5px;
+    background: linear-gradient(90deg, grey, lightgrey);
+}
+
+#two-items {
+    margin: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    flex-direction: row;
+}
+
+#input-box {
+    padding: 7px 16px;
+    width: 170%;
+    border-radius: 5px;
+    border: 1px solid red;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+button {
+    font-family: monospace;
+    padding: 6px 8px;
+    background-color: white;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0px 0px 6px 2px rgb(119, 65, 65);
+}   
+
+button:active {
+    padding: 5px 7px;
+    background-color: whitesmoke;
+}
+
+.sliders {
+    width: 40%;
+    margin: 10px 35%;
+}
+
+.slider {
+    width: 42px;
+    height: 42px;
+    max-width: 80px;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+    display: inline-block;
+    overflow: hidden;
+    margin: 10px;
+    position: relative;
+}
+
+.slider p {
+    text-align: center;
+    border-top: 1.5px solid black;
+    background-color: white;
+    width: 100%;
+    height: inherit;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0 0 0;
+}
+
+p.elementtwo {
+    position: absolute;
+    top: 42px;
+}
+
+p.up {
+    top: 0;
+    transition: all 1s;
+}
