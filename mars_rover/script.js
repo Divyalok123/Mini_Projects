@@ -19,28 +19,3 @@ function loadimages() {
 }
 
 $("#submit").click(loadimages);
-
-// function runthisfunction(data) {
-//     // $('<img>', {
-//     //     src: data.url,
-//     //     height: "100vh",
-//     //     width: "100%"
-//     // }).appendTo('#images');
-
-//     //we can also do above as
-//     var ele = $(document.createElement('img'));
-//     ele.attr('src', data.url);
-//     ele.attr('height', "100%");
-//     ele.attr('width', "100%");
-//     ele.appendTo('#images');
-// }
-
-// $.ajax({
-//     url: 'https://api.nasa.gov/planetary/apod',//?api_key=DEMO_KEY&date=2019-11-05', //api-key, date are query parameters we can also pass them in data
-//     method: 'GET',
-//     success: runthisfunction,
-//     data: {
-//         api_key: 'DEMO_KEY',
-//         date: '2018-06-23'
-//     }
-// });
