@@ -1,0 +1,92 @@
+/** @format */
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+    background-color: rgb(240, 172, 145);
+}
+
+#button-box {
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(235, 247, 208);
+}
+
+#button-box button {
+    min-width: 160px;
+    padding: 8px 18px;
+    border: 1px solid lightcoral;
+    border-radius: 10px;
+    background-color: lightpink;
+    font: 16px monospace;
+    color: rgb(85, 17, 17);
+    outline: none;
+    margin: 10px 23%;
+}
+
+#button-box h2{
+    max-width: 350px;
+    font-family: Courier;
+    background: -webkit-linear-gradient(45deg, rgb(226, 104, 124), rgb(223, 21, 21), rgb(112, 11, 11));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#cards {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    width: 250px;
+    height: 320px;
+    text-align: center;
+    background-color: white;
+    font-family: monospace, Helvetica, sans-serif;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 0px 0px 12px 1px rgb(196, 184, 184);
+    margin: 10px;
+    overflow: hidden;
+}
+
+.card-image{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover contain;
+    height: 50%;
+    opacity: 90%;
+}
+
+.card-text {
+    padding: 20px;
+}
+
+.card-footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px 0;
+    background-color: lightgoldenrodyellow;
+}
+
+.card-footer span {
+    float: right;
+    margin-right: 20px;
+}
+
+
