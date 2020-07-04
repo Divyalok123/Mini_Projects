@@ -36,9 +36,9 @@ app.post('/create-contact', function(req,res){
     return res.redirect('back');
 });
 
-app.get('/delete-contact/:number', function(req,res){
-    console.log(req.params);
-    let number = req.params.number;
+app.get('/delete-contact', function(req,res){
+    console.log(req.query);
+    let number = req.query.number;
 
     let contactIndex = contactList.findIndex(contact => contact.number == number);
     contactList.splice(contactIndex, 1);
