@@ -1,8 +1,8 @@
 Starting Commands: 
 
-npm install -g @angular/cli
-ng new intro-project
-cd my-dream-app
+npm install -g @angular/cli <br>
+ng new intro-project <br>
+cd my-dream-app <br>
 ng serve 
 
 
