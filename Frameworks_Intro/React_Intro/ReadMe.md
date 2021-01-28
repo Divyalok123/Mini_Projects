@@ -1,5 +1,5 @@
-Starting Commands: 
+### Starting Commands: 
 
-npx create-react-app react_intro
-cd my-app
-npm start
+npx create-react-app react_intro <br>
+cd my-app <br>
+npm start <br>
