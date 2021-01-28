@@ -1,10 +1,21 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/">Home</router-link>
   </div>
   <router-view />
+  <posts-list></posts-list>
 </template>
+
+<script>
+import PostsList from './components/PostsList';
+
+export default {
+  name: "App",
+  components: {
+    PostsList
+  }
+}
+</script>
 
 <style lang="scss">
 #app {
