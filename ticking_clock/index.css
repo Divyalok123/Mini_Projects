@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=KoHo&family=Noto+Sans+JP&family=Open+Sans&family=Padauk&family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+#main-content {
+    width: 100%;
+    height: 100%;
+}
+
+#main-header {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 45px;
+    z-index: 2;
+}
+
+#clock-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./images/back_3.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-size: 28px;
+    color: white;
+}
+
+/* -- FONTS -- */
+.koho {
+    font-family: 'KoHo', sans-serif;
+}
+
+.opensans {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.padauk {
+    font-family: 'Padauk', sans-serif;
+}
+
+.sanspro {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.notosans {
+    font-family: 'Noto Sans JP', sans-serif;
+}
